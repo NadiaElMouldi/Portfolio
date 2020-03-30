@@ -1,5 +1,5 @@
   //importing components
-import { Map } from "./Map.js";
+import { Map } from "./map.js";
 import { Count} from "./count_table.js"
 import { bars} from "./bar_charts.js"
 
