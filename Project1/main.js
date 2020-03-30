@@ -15,13 +15,11 @@ let state = {
 
 
 Promise.all([
-  d3.json("nyc.geojson.json"),
   d3.csv("grades.csv", d3.autoType),
   d3.csv("counts.csv", d3.autoType),
   d3.csv("count-bars.csv", d3.autoType)
-]).then(([geojson,restaurant,counts,bars]) => {
+]).then(([restaurant,counts,bars]) => {
   // + SET STATE WITH DATA
-  state.geojson = geojson;
   state.restaurant = restaurant;
   state.counts = counts;
   state.bars = bars;
