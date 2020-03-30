@@ -1,0 +1,91 @@
+body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 1em 3em;
+  }
+  
+  #dashboard {
+    display: grid;
+    grid-template-columns: 800px 150px 700px;
+    grid-gap: 5px; 
+    color: #444;
+    top: 200px;
+    grid-template-areas: 
+    "a b c"
+  }
+  
+
+#count {
+    grid-area: b;
+    top: 15%;
+}
+
+#map-overlay{
+  position: absolute;
+  top:10%;
+  right: 1535px;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  width: 15%;
+  height: 20%;
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
+
+
+  #map{
+    grid-area: a;
+    height: 800px;
+  }
+ 
+
+
+  #bars{
+    grid-area: c;
+    top: 500px;
+    margin-top: 40px;
+  }
+
+  td {
+    text-align: left;
+    padding: 10em;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    border-spacing:0 50px; 
+    border: 10px
+  }
+
+  table{
+      height: 800px;
+  }
+
+  thead {
+    display: table-row;
+  }
+
+  
+.label {
+  fill: lightgrey;
+  font-weight: lighter;
+  text-anchor: top;
+}
+
+.axis text{
+  font-size: 10px;
+  stroke: lightgrey;
+  font-weight: lighter;
+}
