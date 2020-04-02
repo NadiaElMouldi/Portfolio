@@ -19,7 +19,7 @@ class bars {
     const xScale = d3
       .scaleLinear()
       .domain([0, d3.max(data, d => d.n)])
-      .range([this.margins.left, this.width-this.margins.right]);
+      .range([this.margins.left, this.width/1.8]);
   
     //const xAxis = d3.axisBottom(xScale).ticks(data.length);
     const yAxis = d3.axisRight(yScale).ticks(data.length)
@@ -48,9 +48,23 @@ class bars {
           .style("left", d3.event.pageX - 50 + "px")
           .style("top", d3.event.pageY - 70 + "px")
           .style("display", "inline-block")
-          .html(d.n);
+          .html(d.n)
     })
-    .on("mouseout", function(d){ tooltip.style("display", "none");});
+    .on("mouseout", function(d){ tooltip.style("display", "none")})
+    .on("click", d => {
+      console.log(d)
+      setGlobalState({ rating_selected: d })
+  });
+   
+  //   rect
+  //   .on("click", function() {
+  //     d3.select(this)
+  //       .attr("fill", "border: 10px solid red;");
+  // })
+  // .on("mouseout", function(d, i) {
+  //     d3.select(this).attr("border", function() {
+  //         return "none"
+  //     })});
 
       //yellow CDAA59
       //blue 2D5781

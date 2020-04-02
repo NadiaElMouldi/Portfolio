@@ -10,7 +10,8 @@ let state = {
   geojson: null,
   restaurant: null,
   counts: null,
-  grade_selected: null
+  grade_selected: null,
+  rating_selected: null
 };
 
 
