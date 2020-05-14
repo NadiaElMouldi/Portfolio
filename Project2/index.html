@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Women Writers from the Middle East and North Africa</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.js"></script> -->
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="stickyfill.min.js"></script>
+    <script src="scrollama.min.js"></script>
+  </head>
+  <body style="background-color: black;">
+
+<main width = 100%>
+    <section id="scrolly">
+      <figure width=80%>
+        <header>
+          <h1>MENA Women Writers</h1>
+          <h6>A repository</h6>
+        </header>  
+        <br>
+        <br>
+        <div id=grid >
+        <div id="writers">
+        </div>
+        <div id= left_img>
+          <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+        </div>
+        <div id= right_img>
+          <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+         <img id="Nawal" src="https://orgs.law.harvard.edu/womeninspiringchange/files/2015/02/Nawal-El-Saadawi.png"
+         width="150" height="150">
+         <img id="Bournaz" src="https://images-na.ssl-images-amazon.com/images/I/514pRN-VIGL._SX310_BO1,204,203,200_.jpg"
+         width="150" height="150">
+        </div>
+        </div>
+      </figure>
+      <article>
+        <div class="step" data-step="1">
+          <p>This project highlights women writers from the Middle East and North Africa. It serves as a compilation of names of women writers,
+            who should be read and celebrated for their brillian work and their resistance. This project presents to you
+            their names, their stories and their work.
+          </p>
+        </div>
+        <div class="step" data-step="2">
+          <p>As a Tunisian woman, I always challenge myself to seek books and poems by Arab and Amazigh women writers to read. This project is 
+            a reminder for everyone to read their work. Thir works are a testamant to their talent, strengh and resiliency
+            in the face patriarchy, occupation and colonialism. 
+          </p>
+        </div>
+        <div class="step" data-step="3">
+          <p>I thought extensively before choosing a name for this project. Referring to these women as Arab women writers won't do justice
+            to the Amazigh origins of people in North Africa and will ignore the colonial invasion of the region by the Arabs. I chose to call this 
+            project "Women Writers from the Middle and North Africa" to highlight the diversity of women from the region. Some identify as Arab, some as Amazigh,
+            some as Berber and some as North African.</aside>
+          </p>
+        </div>
+        <div class="step" data-step="4">
+          <p>This project is an Open Source repository of names of women writers. This is in no way an exhaustive list and I encourage
+            everyone to get in contact with me if they have suggestions of names to include. To do so, please fill out this form.
+          </p>
+        </div>
+        <div class="step" data-step="5">
+        </div>
+      </article>
+    </section>
+    </main>
+    <div id="writers">
+    </div>
+
+    <!-- this is the line that loads in d3 -->
+    <script src="lib/d3.js"></script>
+    <script src="lib/d3-array.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
