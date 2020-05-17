@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   min-height: 100%;
+  position: relative;
 }
 
 main {
@@ -14,6 +15,7 @@ main {
   font-family: "Myriad Pro";
   width: 100%;
   min-height: 100%;
+  position: relative;
 }
 
 section {
@@ -33,28 +35,22 @@ section {
 }
 
 section:nth-child(1) {
-  padding-left: 80px;
   width: 100%;
   position: absolute;
   
 }
 
 section:nth-child(2) {
-  padding-left: 80px;
-  padding-right: 80px;
 }
 section:nth-child(3) {
-  padding-left: 80px;
-  padding-right: 80px;
+
 }
 section:nth-child(4) {
-  padding-left: 80px;
-  padding-right: 80px;
+
 }
 
 section:nth-child(5) {
-  padding-left: 80px;
-  padding-right: 80px;
+
 }
 
 
@@ -79,55 +75,6 @@ header{
   color: 	#606060;
   font-family: 'Droid Arabic Kufi';
   padding-left: 80px;
-}
-
-
-figure {
-  position: absolute;
-  font-size: 50px;
-  color: "#141313";
-  font-family: 'Droid Arabic Kufi';
-  top: 20;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-column-break-inside: avoid; 
-  height: auto;
-}
-
-#left_img{
-  position: sticky;
-  grid-area: a;
-  opacity: 70%;
-  visibility: hidden;
-}
-
-#left_img #Bournaz {
-  margin: 5px auto;
-  display: block;
-}
-
-#right_img{
-  position: sticky;
-  grid-area: c;
-  opacity: 70%;
-  visibility: hidden;
-}
-
-#right_img #Bournaz {
-  margin: 5px auto;
-  display: block;
-}
-
-#grid {
-  display: grid;
-  margin-left: -100px;
-  grid-template-columns: 50px auto 50px;
-  grid-gap: 0px; 
-  color: #444;
-  top: 200px;
-  grid-template-areas: 
-  "a b c"
 }
 
 
@@ -157,7 +104,6 @@ figure {
   column-gap:           0px;  
   width: 100%;
   height: 60%;
-  margin-left: -100px;
   border: 2px solid;
   border-radius: 15px;
   -moz-border-radius: 15px;
@@ -168,15 +114,6 @@ figure {
   height: 50%;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    /* opacity: 0.9; */
-  }
-}
 
 .name{
   height: auto;
@@ -195,19 +132,6 @@ figure {
   height: auto;
 }
 
-figure p {
-  text-align: center;
-  padding: 1rem;
-  position: absolute;
-  top: 50%;;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
-  font-weight: 900;
-  color:"#141313";
-   border-bottom: lightgray;
-}
 
 .step {
   /* margin: 0 auto 2rem auto;
