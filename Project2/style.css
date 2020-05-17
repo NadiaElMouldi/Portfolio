@@ -1,54 +1,94 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 body {
   /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
   font-family: "Source Sans Pro", sans-serif;
-  padding: 1em 3em;
+  overflow-x: hidden;
 }
 
 main {
   font-size: 100px;
-  color: lightgray;
+  color: "#141313";
   text-align: center;
   font-family: "Myriad Pro";
 }
 
-#scrolly {
+section {
+  height: 100vh;
+}
+#intro {
+  /* background-image: url("https://uploads.tapatalk-cdn.com/20180126/8d4a188d395af857d1e5a65f6f6cb0a7.jpg"); */
+  background-image: url("https://elseed-art.com/wp-content/uploads/2018/04/ELSEED-LORES.jpg");
+  background-size:  auto;
+  background-repeat: repeat-x;
+  opacity: 0.8;
+  /* margin: -100; */
+  background-position: -10px -10px;
   position: relative;
-  padding: 1rem;
+  margin-top: -100;
+  z-index: -3;
 }
 
-article {
-  margin: 0 auto; 
-  left: 100px;
-  width: 60%;
-  border-bottom: lightgray;
+section:nth-child(1) {
+  padding-left: 80px;
+  width: 100%;
+  position: absolute;
+  
 }
+
+section:nth-child(2) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+section:nth-child(3) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+section:nth-child(4) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+section:nth-child(5) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 
 h6{
   margin:0;
   padding:0;
   font-weight: lighter;
   position:absolute;  
-  right:550px; 
+  right:350px; 
+  text-align: left;
 }
 
 h1{
   margin:0;
   padding:0;
   font-weight: lighter;
+  text-align: left;
 }
+
+header{
+  font-size: 45px;
+  color: 	#606060;
+  font-family: 'Droid Arabic Kufi';
+  padding-left: 80px;
+}
+
+
 figure {
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   font-size: 50px;
-  color: lightgray;
-  font-family: 'Raleway', sans-serif;
+  color: "#141313";
+  font-family: 'Droid Arabic Kufi';
   top: 20;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  z-index: 0;
   -webkit-column-break-inside: avoid; 
-  height: 1000000px;
+  height: auto;
 }
 
 #left_img{
@@ -88,21 +128,41 @@ figure {
 
 
 #writers {
-  margin-left: 110px;
+
   text-transform: capitalize;
   border-spacing:0 50px;
-  color: lightgrey;
+  color:"#141313";
   columns: 6;
-  column-gap:10px;
-  padding: 10px;
-  animation: 10s fadeIn;
+  column-gap:0px;
+  padding: 0px;
+  /* animation: 10s fadeIn;
   animation-delay: 20s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-  font-family: 'Raleway', sans-serif;
+  animation-fill-mode: forwards; */
+  font-family: 'Droid Arabic Kufi';
   grid-area: b;
 }
 
+
+#collage-1 {
+  line-height: 0;
+  -webkit-column-count: 10;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    10;
+  -moz-column-gap:      0px;
+  column-count:         10;
+  column-gap:           0px;  
+  width: 100%;
+  height: 60%;
+  margin-left: -100px;
+  border: 2px solid;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+
+#Nawal {
+  width: 100%;
+  height: 50%;
+}
 
 @keyframes fadeIn {
   0% {
@@ -110,7 +170,7 @@ figure {
   }
   100% {
     visibility: visible;
-    opacity: 1;
+    /* opacity: 0.9; */
   }
 }
 
@@ -122,8 +182,9 @@ figure {
 .cell{
   -webkit-column-break-inside: avoid;  
    display:inline-block; 
-  border:2px solid lightgray;
+  border:0.5px solid lightgray;
   font-family: 'Raleway', sans-serif;
+  color: #606060;
 }
 
 .name_arabic{
@@ -140,7 +201,7 @@ figure p {
   transform: translate(-50%, -50%);
   font-size: 8rem;
   font-weight: 900;
-  color: #fff;
+  color:"#141313";
    border-bottom: lightgray;
 }
 
@@ -148,88 +209,14 @@ figure p {
   /* margin: 0 auto 2rem auto;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.1); */
-  font-size: 40px;
-  color: lightgray;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  top: 10px;
-  border-bottom: lightgray;
-}
-
-.step:last-child {
-  margin-bottom: 0;
-  font-size: 40px;
-  color: lightgray;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  border-bottom: lightgray;
-}
-
-
-
-.step.is-active p {
-  background-color: black;
-  color: white;
-  opacity: 0.95;
-  height: 270px;
-  font-size: 40px;
-  color: lightgray;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  border-bottom: lightgray;
-}
-
-.step p {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.5rem;
-  background-color: black;
-  opacity: 0.95;
-  height: 270px;
-  font-size: 40px;
-  color: lightgray;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  border-bottom: lightgray;
-}
-
-td {
+  font-size: 35px;
+  color: 	#606060;
   text-align: left;
-  padding: 10em;
-  cursor: pointer;
-  font-weight: bolder;
-  font-size: 40px;
-  text-align: center;
-  text-transform: capitalize;
-  border-spacing:0 50px;
-  color: lightgrey;
-}
-
-tr {
-  /* border: 10px solid white; */
-}
-
-table{
-    height: 800px;
-    width: 10px;
-    /* border: 10px solid white; */
-    border-collapse: collapse; 
-    
-    
-}
-
-.label {
-fill: lightgrey;
-font-weight: lighter;
-text-anchor: top;
-}
-
-.axis text{
-font-size: 10px;
-stroke: lightgrey;
-font-weight: lighter;
+  font-family: 'Droid Arabic Kufi';
+  font-weight: lighter;
+  border-bottom: lightgray;
+  line-height: 0.95;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 80%;
 }

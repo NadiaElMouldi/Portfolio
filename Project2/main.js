@@ -11,61 +11,6 @@ let state = {
 
 
 var main = d3.select("main");
-var scrolly = main.select("#scrolly");
-var figure = scrolly.select("figure");
-var article = scrolly.select("article");
-var step = article.selectAll(".step");
-
-// initialize the scrollama
-var scroller = scrollama();
-
-// resize function to set dimensions on load and on page resize
-function handleResize() {
-  console.log("handleResize")
-  var stepHeight = Math.floor(window.innerHeight * 0.75);
-  step.style('height', stepHeight + 'px');
-
-  var figureHeight = window.innerHeight / 3;
-  var figureMarginTop = (window.innerHeight - figureHeight) / 4;
-
-  figure
-    .style("height", figureHeight + "px")
-    .style("top", figureMarginTop + "px");
-
-  console.log(figureMarginTop)
-
-  scroller.resize();
-  console.log(scroller)
-}
-
-// scrollama event handlers
-function handleStepEnter(response) {
-  console.log(response);
-  step.classed('is-active', function (d, i) {
-    return i === response.index;
-  })
-
-  var myElement = document.querySelector( '#writers' );
-  
-
-  figure.select('p').text(response.index + 1)
-  article.select('p')
-  if (response.index === 4) {
-    // myElement.style("visibility", "visible")
-    figure.style("position", "relative")
-    figure.style("top", "0px")
-    article.style("visibility", "hidden")
-  }
-}
-
-
-function setupStickyfill() {
-  d3.selectAll(".sticky").each(function () {
-    Stickyfill.add(this);
-  });
-  console.log("set up")
-}
-
 
 
 /**
@@ -79,6 +24,7 @@ d3.csv("data_temp.csv", d3.autotype).then(data => {
 
 
 function init() {
+  AOS.init();
 
   d3.selection.prototype.moveToFront = function () {
     return this.each(function () {
@@ -95,45 +41,33 @@ function init() {
     .style("height", "400px")
     .style("border", "0 2px solid white")
     .style("height", "auto")
+    .style("background-color", "#dadada")
     .on("mouseover", function (d) {
       d3.select(this).transition()
         .duration(200)
         .style("background-color", "#C0C0C0")
-        .style("color", "black")
+
+        // #d4b9c8
+        .style("color", "#141313")
+        .style("transform", "scale(1.1,1.1)")
+        .style("transform-origin", "50% 50%");
 
     })
     .on("mouseout", function (d) {
       d3.select(this).transition()
         .duration(200)
-        .style("background-color", "black")
-        .style("color", "lightgrey")
+        .style("background-color", "#dadada")
+        .style("color", "#606060")
+        .style("transform", "scale(1,1)")
+        .style("transform-origin", "100% 100%")
     })
     .on("click", function (d) {
       console.log(this.getBoundingClientRect())
     })
-    .on("scroll", function(d){
-      cell.style("visibility","visible")
+    .on("scroll", function (d) {
+      cell.style("visibility", "visible")
       console.log("scroll")
     })
-
-
-  const cell_to_show = document.querySelector("#writers");
-  console.log(cell_to_show)
-
-  var myScrollFunc = function () {
-    var y = window.scrollY;
-    console.log(y)
-    if (y > 2000) {
-      cell_to_show.style.animation= "30s fadeIn";
-      // cell_to_show.style['animation-delay']="20s";
-      cell_to_show.style['animation-fill-mode']="forwards";
-    } else {
-      cell_to_show.style.visibility = "hidden"
-    }
-  };
-
-  window.addEventListener("scroll", myScrollFunc);
-
 
 
   const name = cell.selectAll(".name")
@@ -166,8 +100,6 @@ function init() {
 
 
 
-
-
   const intro = cell.selectAll(".intro")
     .data(d => [d.Introduction])
     .join("div")
@@ -177,18 +109,16 @@ function init() {
     .style("font-size", "18px")
 
 
+  const images = d3.selectAll("#Nawal")
+    .on("mouseover", function (d) {
+      d3.select(this).style("transform", "scale(1.1,1.1)")
+        .style("transform-origin", "50% 50%");
 
-  setupStickyfill();
-
-  handleResize();
-
-  scroller.setup({
-    step: "#scrolly article .step",
-    offset: 0.5,
-    debug: true
-  }).onStepEnter(handleStepEnter)
-  // setup resize event
-  window.addEventListener('resize', handleResize);
+    })
+    .on("mouseout", function (d) {
+      d3.select(this).style("transform", "scale(1,1)")
+        .style("transform-origin", "100% 100%");
+    })
 
 }
 
