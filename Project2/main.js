@@ -32,6 +32,8 @@ function init() {
     });
   };
 
+ 
+
   const cell = d3.select("#writers")
     .selectAll(".cell")
     .data(state.data)
@@ -121,7 +123,13 @@ function init() {
         .style("transform-origin", "100% 100%");
     })
 
-    console.log(images)
+
+    draw()
+}
+
+function handleClick(event){
+  console.log(document.getElementById("#input_t").value)
+  return false;
 }
 
 
