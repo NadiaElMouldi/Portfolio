@@ -41,11 +41,11 @@ function init() {
     .style("height", "400px")
     .style("border", "0 2px solid white")
     .style("height", "auto")
-    .style("background-color", "#dadada")
+    .style("background-color", "rgba(158, 47, 40, 0)")
     .on("mouseover", function (d) {
       d3.select(this).transition()
         .duration(200)
-        .style("background-color", "#C0C0C0")
+        .style("background-color", "#e3ced3")
 
         // #d4b9c8
         .style("color", "#141313")
@@ -56,8 +56,8 @@ function init() {
     .on("mouseout", function (d) {
       d3.select(this).transition()
         .duration(200)
-        .style("background-color", "#dadada")
-        .style("color", "#606060")
+        .style("background-color", "rgba(158, 47, 40, 0)")
+        .style("color", "#e3ced3")
         .style("transform", "scale(1,1)")
         .style("transform-origin", "100% 100%")
     })
@@ -109,8 +109,9 @@ function init() {
     .style("font-size", "18px")
 
 
-  const images = d3.selectAll("#Nawal")
+  var images = d3.selectAll("#Nawal")
     .on("mouseover", function (d) {
+      console.log("hey")
       d3.select(this).style("transform", "scale(1.1,1.1)")
         .style("transform-origin", "50% 50%");
 
@@ -120,6 +121,7 @@ function init() {
         .style("transform-origin", "100% 100%");
     })
 
+    console.log(images)
 }
 
 

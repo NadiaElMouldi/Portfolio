@@ -1,42 +1,171 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 body {
   /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   overflow-x: hidden;
   width: 100%;
   min-height: 100%;
   position: relative;
 }
 
+br {
+  display: block; 
+  content: ""; 
+  margin-top: 50px;
+}
 main {
   font-size: 100px;
   color: "#141313";
   text-align: center;
-  font-family: "Myriad Pro";
+  font-family: "IBM Plex Sans", sans-serif;
   width: 100%;
   min-height: 100%;
   position: relative;
-}
+  }
 
 section {
   height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
 }
+
+.container {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 800px;
+  height: 100px;
+}
+  .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: #e3ced3;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  }
+    /* // box-shadow: 0 0 25px 0 crimson; */
+    .search:hover {
+      cursor: pointer;
+    }
+    .search::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 22px;
+      right: 0;
+      bottom: 0;
+      left: 22px;
+      width: 12px;
+      height: 2px;
+      background: white;
+      transform: rotate(45deg);
+      transition: all .5s;
+    }
+    .search::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -5px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all .5s;
+    }
+
+  input {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    /* // border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    background:#e3ced3;
+    color: white;
+    text-shadow: 0 0 10px #e3ced3;
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 #e3ced3,
+                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    /* // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5); */
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+  }
+    input:hover {
+      cursor: pointer;
+    }
+    input:focus {
+      width: 600px;
+      opacity: 1;
+      cursor: text;
+    }
+    input:focus ~ .search {
+      right: -250px;
+      background: #e3ced3;
+      z-index: 6;
+    }
+      input::before {
+        top: 0;
+        left: 0;
+        width: 25px;
+      }
+      input::after {
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        border: none;
+        background: white;
+        border-radius: 0%;
+        transform: rotate(-45deg);
+      }
+    
+    input::placeholder {
+      color: white;
+      opacity: 0.5;
+      font-weight: bolder;
+    }
+
+
 #intro {
   /* background-image: url("https://uploads.tapatalk-cdn.com/20180126/8d4a188d395af857d1e5a65f6f6cb0a7.jpg"); */
-  background-image: url("https://elseed-art.com/wp-content/uploads/2018/04/ELSEED-LORES.jpg");
+  /* background-image: url("https://elseed-art.com/wp-content/uploads/2018/04/ELSEED-LORES.jpg");
   background-size:  auto;
   background-repeat: repeat-x;
-  opacity: 0.8;
+  opacity: 0.8; */
   /* margin: -100; */
-  background-position: -10px -10px;
+  /* background-position: -10px -10px; */
+  top: 0;
   position: relative;
-  margin-top: -100;
-  z-index: -3;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 section:nth-child(1) {
   width: 100%;
   position: absolute;
+  font-family: "IBM Plex Sans", sans-serif;
   
 }
 
@@ -60,20 +189,22 @@ h6{
   font-weight: lighter;
   position:absolute;  
   right:350px; 
-  text-align: left;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h1{
   margin:0;
   padding:0;
   font-weight: lighter;
-  text-align: left;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 header{
-  font-size: 45px;
-  color: 	#606060;
-  font-family: 'Droid Arabic Kufi';
+  font-size: 35px;
+  color: #e3ced3;
+  font-family: "IBM Plex Sans", sans-serif;
   padding-left: 80px;
 }
 
@@ -89,7 +220,8 @@ header{
   /* animation: 10s fadeIn;
   animation-delay: 20s;
   animation-fill-mode: forwards; */
-  font-family: 'Droid Arabic Kufi';
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(158, 47, 40, 0);
   grid-area: b;
 }
 
@@ -107,6 +239,7 @@ header{
   border: 2px solid;
   border-radius: 15px;
   -moz-border-radius: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 #Nawal {
@@ -117,19 +250,21 @@ header{
 
 .name{
   height: auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .cell{
   -webkit-column-break-inside: avoid;  
    display:inline-block; 
   border:0.5px solid lightgray;
-  font-family: 'Raleway', sans-serif;
-  color: #606060;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #e3ced3;
+  background-color: rgba(158, 47, 40, .8);
 }
 
 .name_arabic{
   height: auto;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 
@@ -138,13 +273,15 @@ header{
   color: #fff;
   background-color: rgba(0, 0, 0, 0.1); */
   font-size: 35px;
-  color: 	#606060;
+  color: 	#e3ced3;
   text-align: left;
-  font-family: 'Droid Arabic Kufi';
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: lighter;
   border-bottom: lightgray;
   line-height: 0.95;
   padding-left: 80px;
   padding-right: 80px;
+  text-align: center;
+  padding-right: -10;
   width: 80%;
 }
