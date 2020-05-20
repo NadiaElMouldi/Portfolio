@@ -15,6 +15,7 @@ Health Inspection Data from NYC Open Data. [Link](https://data.cityofnewyork.us/
 Yelp Ratings from [Yelp API](https://www.yelp.com/developers/documentation/v3/business)  
 Map created with [Mapbox](https://www.mapbox.com/)
 ### Link to artifacts from Design Process
+Link to initial sketches and mockup [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project1/Sketches%20and%20Mockups)
  
 
 ## Project 2: Women Writer from the Middle East and North Africa: A Repository
@@ -31,4 +32,5 @@ This project is a repository for women writers from the Middle East and North Af
 ![Alt Text](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/v2.gif)
 ### Documentation
 ### Link to artifacts from Design Process
+Link to initial sketches and mockups [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project2/Sketches%20and%20Mockup)
 
