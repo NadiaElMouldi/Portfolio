@@ -19,8 +19,13 @@ This project puts in contrast the New York City Resturants Helath Inspection gra
 ### Link
 Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project2/).
 ### Abstract
+This project is a repository for women writers from the Middle East and North Africa.
 ### Screenshot
-### Iteration 
-### documentation
+### Iteration
+Version 1:
+![Alt Text](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/v1.gif)
+Version 2:
+![Alt Text](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/v2.gif)
+### Documentation
 ### Link to artifacts from Design Process
 
