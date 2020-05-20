@@ -6,7 +6,9 @@ This repository will include documentation and and links for my Interactive Data
 ### Link 
 Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project1/).
 ### Abstract
+This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.
 ### Screenshot
+![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png)
 ### Iteration 
 ### documentation
 ### Link to artifacts from Design Process
