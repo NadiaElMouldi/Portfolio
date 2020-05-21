@@ -21,8 +21,8 @@ This project is a repository for women writers from the Middle East and North Af
   
 ![Project Screenshot](Project2/project2.gif)
 ### Earlier Versions
-<img src="Project2/v1.gif" width=500px />
-<img src="Project2/iteration2.gif" width=500px/>  
+<img src="Project2/v1.gif"/>
+<img src="Project2/iteration2.gif"/>  
 
 ### Link to artifacts from Design Process
 Link to initial sketches and mockups [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project2/Sketches%20and%20Mockup)
