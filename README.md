@@ -28,5 +28,5 @@ This project is a repository for women writers from the Middle East and North Af
 Link to initial sketches and mockups [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project2/Sketches%20and%20Mockup)
 
 ## Reflection  
-I wrote a reflection about why and how I chose to work on the Women Writers project. Check it out [here]()
+I wrote a reflection about why and how I chose to work on the Women Writers project. Check it out [here](https://medium.com/@nadiaelmouldi/reflecting-on-women-writers-from-the-middle-east-and-north-africa-a-repository-e383ccfdaaac?source=friends_link&sk=9dab3aab876b5aa6b7c9cb20ca377715)
 
