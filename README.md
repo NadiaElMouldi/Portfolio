@@ -2,12 +2,12 @@
 This repository will include documentation and and links for my Interactive Data Visualisation projects:
 
 # Table of Contents
-1. [Project1](#Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings)
+1. [Project1](#project1)
 . [Example2](#example2)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
-## [Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings](https://nadiaelmouldi.github.io/Portfolio/Project1/)  
+## [Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings](https://nadiaelmouldi.github.io/Portfolio/Project1/) <a name="project1"></a>  
 This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.  
   
 ![Project Screenshot](Project1/project1.gif)
