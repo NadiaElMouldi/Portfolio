@@ -7,7 +7,7 @@ This project puts in contrast the New York City Resturants Helath Inspection gra
   
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/project1.gif)
 ### Earlier Versions
-![Alt Text](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png = 100x100)
+![Alt Text](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png =100x100)
 ### Documentation
 Health Inspection Data from NYC Open Data. [Link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)  
 Yelp Ratings from [Yelp API](https://www.yelp.com/developers/documentation/v3/business)  
