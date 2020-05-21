@@ -4,7 +4,7 @@ This repository will include documentation and and links for my Interactive Data
 ## [Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings](https://nadiaelmouldi.github.io/Portfolio/Project1/)  
 This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.  
   
-![Project Screenshot]("Project1/project1.gif")
+![Project Screenshot](Project1/project1.gif)
 ### Earlier Versions
 <img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png" width=500px/>  
 
