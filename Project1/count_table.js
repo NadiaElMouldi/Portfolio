@@ -5,21 +5,7 @@ class Count {
     const table = d3.select("#count").append("table");
     const format = d3.format(",." + d3.precisionFixed(1) + "f");
 
-    // table
-    //   .append("thead")
-    //   .append("tr")
-    //   .selectAll("th")
-    //   .attr("colspan", "13")
-    //   .data(state.counts.columns)
-    //   .join("th")
-    //   .text(d => d)
-    //   .attr("class", d => {return "bold"})
-    //   .style("font-size", "34px")
-    //   .style("padding","5px")
-    //   .on("click", d => {
-    //     setGlobalState({ grade_selected: d })
-    //   })
-      //.style("width", "3000px")
+    var colorScale = d3.scaleOrdinal().range([ "#CDAA59", "#CDAA59","#2D5781","#2D5781","#D3381B", "#D3381B","#F78D5C", "#F78D5C"]);
 
     // make this a "this" to invoke global scope
     this.tableRows = table
@@ -32,6 +18,7 @@ class Count {
       .style("padding","5px")
       .attr("style", "font-size: 1000") 
       .on("click", d => {
+            console.log(d)
              setGlobalState({ grade_selected: d })
          });
 
@@ -40,7 +27,9 @@ class Count {
       .data(d => Object.values(d))
       .join("td")
       .text(d => d)
-      .style("padding","5px")
+      .style("padding","10px")
+      .style("color", d =>  colorScale(d))
+      .style("opacity", "0.5")
     }
   
     draw(state, setGlobalState) {

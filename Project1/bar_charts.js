@@ -49,8 +49,11 @@ class bars {
           .style("top", d3.event.pageY - 70 + "px")
           .style("display", "inline-block")
           .html(d.n)
+         d3.select(this).style("fill","white")
     })
-    .on("mouseout", function(d){ tooltip.style("display", "none")})
+    .on("mouseout", function(d){ 
+          tooltip.style("display", "none")
+          d3.select(this).style("fill", fill_color);})
     .on("click", d => {
       console.log(d)
       setGlobalState({ rating_selected: d })
@@ -72,22 +75,24 @@ class bars {
       //light orange F78D5C
   
     // append text
-    // const text = this.svg
-    //   .selectAll("text")
-    //   .data(data)
-    //   .join("text")
-    //   .attr("class", "label")
-    //   // this allows us to position the text in the center of the bar
-    //   .attr("x", d => xScale(d.n)+this.margins.left)
-    //   .attr("y", d => yScale(d.rating_cat))
-    //   .text(d => d.n)
-    //   .attr("dy", "1.25em");
+    const text = this.svg
+      .selectAll("text")
+      .data(data)
+      .join("text")
+      .attr("class", "label")
+      // this allows us to position the text in the center of the bar
+      .attr("x", d => xScale(d.n)+2*this.margins.left)
+      .attr("y", d => yScale(d.rating_cat)-this.margins.left/2)
+      .text(d => d.rating_cat)
+      .style("font-size","25px")
+      .style("font-weight","bolder")
+      .attr("dy", "1.25em");
       
-    this.svg
-      .append("g")
-      .attr("class", "axis")
-      .attr("transform", `translate(${2*this.margins.left}, 0)`)
-      .call(yAxis);
+    // this.svg
+    //   .append("g")
+    //   .attr("class", "axis")
+    //   .attr("transform", `translate(${2*this.margins.left}, 0)`)
+    //   .call(yAxis);
       }
   
     draw(state, setGlobalState) {
