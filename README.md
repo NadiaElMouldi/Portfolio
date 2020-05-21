@@ -7,7 +7,7 @@ This project puts in contrast the New York City Resturants Helath Inspection gra
   
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/project1.gif)
 ### Earlier Versions
-<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png" width=700px/>  
+<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/scrnsht2.png" width=500px/>  
 
 ### Documentation
 Health Inspection Data from NYC Open Data. [Link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)  
@@ -22,8 +22,8 @@ This project is a repository for women writers from the Middle East and North Af
   
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/project2.gif)
 ### Earlier Versions
-<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/v1.gif" width=700px />
-<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/iteration2.gif" width=700px/>
+<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/v1.gif" width=500px />
+<img src="https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/iteration2.gif" width=500px/>
 ### Link to artifacts from Design Process
 Link to initial sketches and mockups [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project2/Sketches%20and%20Mockup)
 
