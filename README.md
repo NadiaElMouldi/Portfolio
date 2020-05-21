@@ -15,8 +15,7 @@ Map created with [Mapbox](https://www.mapbox.com/)
 Link to initial sketches and mockup [here](https://github.com/NadiaElMouldi/Portfolio/tree/master/Project1/Sketches%20and%20Mockups)
  
 
-## Project 2: Women Writer from the Middle East and North Africa: A Repository
-Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project2/).  
+## [Project 2: Women Writer from the Middle East and North Africa: A Repository](https://nadiaelmouldi.github.io/Portfolio/Project2/)  
 This project is a repository for women writers from the Middle East and North Africa.  
   
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/project2.gif)
