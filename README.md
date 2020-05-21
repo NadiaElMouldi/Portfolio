@@ -2,8 +2,8 @@
 This repository will include documentation and and links for my Interactive Data Visualisation projects:
 
 ## [Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings](https://nadiaelmouldi.github.io/Portfolio/Project1/)
-Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project1/).
-This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.
+Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project1/).  
+This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.  
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project1/project1.gif)
 ### Iteration 
 ### Documentation
@@ -15,8 +15,8 @@ Link to initial sketches and mockup [here](https://github.com/NadiaElMouldi/Port
  
 
 ## Project 2: Women Writer from the Middle East and North Africa: A Repository
-Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project2/).
-This project is a repository for women writers from the Middle East and North Africa.
+Check out the project [here](https://nadiaelmouldi.github.io/Portfolio/Project2/).  
+This project is a repository for women writers from the Middle East and North Africa.  
 ![Project Screenshot](https://github.com/NadiaElMouldi/Portfolio/blob/master/Project2/project2.gif)
 ### Iteration
 ##### Version 1:
