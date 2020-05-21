@@ -1,0 +1,35 @@
+body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+  
+  br {
+    display: block; 
+    content: ""; 
+    margin-top: 50px;
+  }
+  
+  main {
+    justify-content: center;
+    font-size: 100px;
+    color: "#141313";
+    text-align: center;
+    font-family: "Garamond", sans-serif;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin:0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+#proj1 {
+  margin-top: 70px;
+  font-size: 30px;
+  width: 40%;
+  font-family: "Garamond", sans-serif;
+}
