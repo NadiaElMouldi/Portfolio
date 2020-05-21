@@ -6,7 +6,7 @@ This project puts in contrast the New York City Resturants Helath Inspection gra
   
 ![Project Screenshot](Project1/project1.gif)
 ### Earlier Versions  
-<img src="Project1/scrnsht2.png" width="250"/>  
+<img src="Project1/scrnsht2.png" width="400"/>  
 
 ### Data
 Health Inspection Data from NYC Open Data. [Link](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)  
