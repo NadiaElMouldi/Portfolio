@@ -13,7 +13,9 @@ br {
   content: ""; 
   margin-top: 50px;
 }
+
 main {
+  justify-content: center;
   font-size: 100px;
   color: "#141313";
   text-align: center;
@@ -21,6 +23,9 @@ main {
   width: 100%;
   min-height: 100%;
   position: relative;
+  margin:0 auto;
+  margin-right: auto;
+  margin-left: auto;
   }
 
 section {
@@ -150,36 +155,20 @@ section {
 
 
 #intro {
-  /* background-image: url("https://uploads.tapatalk-cdn.com/20180126/8d4a188d395af857d1e5a65f6f6cb0a7.jpg"); */
-  /* background-image: url("https://elseed-art.com/wp-content/uploads/2018/04/ELSEED-LORES.jpg");
-  background-size:  auto;
-  background-repeat: repeat-x;
-  opacity: 0.8; */
-  /* margin: -100; */
-  /* background-position: -10px -10px; */
   top: 0;
   position: relative;
   font-family: "IBM Plex Sans", sans-serif;
+  margin:0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 section:nth-child(1) {
   width: 100%;
   position: absolute;
   font-family: "IBM Plex Sans", sans-serif;
-  
-}
-
-section:nth-child(2) {
-}
-section:nth-child(3) {
-
-}
-section:nth-child(4) {
-
-}
-
-section:nth-child(5) {
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -205,24 +194,59 @@ header{
   font-size: 35px;
   color: #e3ced3;
   font-family: "IBM Plex Sans", sans-serif;
-  padding-left: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#second{
+  position: absolute;
+}
+
+#writers {
+  text-transform: capitalize;
+  position: relative;
+  border-spacing:0 50px;
+  color:"#141313";
+  columns: 4;
+  column-gap:0px;
+  padding: 0px;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(158, 47, 40, 0);
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  float: right;
 }
 
 
-#writers {
+#info {
+  position: sticky;
+  position: -webkit-sticky;
+  width: 25%;
+  top: 50px;
+  margin-left: 10px;
+  float: left;
+  border:2px solid rgb(68, 13, 13);
+  color: rgb(68, 13, 13);
+  font-weight: bold;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTNV3x7wjlPtS5VmGUIHqZ3bXae7MemkkOq6L7PwiAwrZT49Vc&usqp=CAU"); */
+}
 
-  text-transform: capitalize;
-  border-spacing:0 50px;
-  color:"#141313";
-  columns: 6;
-  column-gap:0px;
-  padding: 0px;
-  /* animation: 10s fadeIn;
-  animation-delay: 20s;
-  animation-fill-mode: forwards; */
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: rgba(158, 47, 40, 0);
-  grid-area: b;
+#info:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:-1;
+    opacity:0.08;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTNV3x7wjlPtS5VmGUIHqZ3bXae7MemkkOq6L7PwiAwrZT49Vc&usqp=CAU");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 
@@ -234,12 +258,15 @@ header{
   -moz-column-gap:      0px;
   column-count:         10;
   column-gap:           0px;  
-  width: 100%;
+  width: 99%;
   height: 60%;
   border: 2px solid;
   border-radius: 15px;
+  margin:0 auto;
   -moz-border-radius: 15px;
   font-family: "IBM Plex Sans", sans-serif;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 #Nawal {
@@ -260,6 +287,8 @@ header{
   font-family: 'IBM Plex Sans', sans-serif;
   color: #e3ced3;
   background-color: rgba(158, 47, 40, .8);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 .name_arabic{
@@ -285,3 +314,119 @@ header{
   padding-right: -10;
   width: 80%;
 }
+
+.margin {
+  height: 300px;
+  margin: 0 15%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.inputGroup {
+  position: relative;
+  height: 70px;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: Trebuchet MS;
+  color: rgb(68, 13, 13);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  display: block;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  left: 25px;
+  padding: 5px;
+  font-family: Trebuchet MS;
+  background: none;
+  color: #ccc;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  top: -20px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+.inputGroup input:focus ~ .inputBar:before,
+.inputGroup input:focus ~ .inputBar:after,
+.inputGroup textarea:focus ~ .inputBar:before,
+.inputGroup textarea:focus ~ .inputBar:after {
+  width: 50%;
+}
+
+.inputGroup textarea {
+  height: 100px;
+  width: 280px;
+  overflow: auto;
+  resize: none;
+}
+
+.inputGroup .inputBar {
+  position: relative;
+  display: block;
+  width: 290px;
+}
+
+.inputGroup .inputBar:before,
+.inputGroup .inputBar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  background: white;
+  height: 2px;
+  transition: all 0.2s ease;
+}
+
+.inputGroup .inputBar:after {
+  right: 50%;
+}
+
+.inputGroup .inputBar:before {
+  left: 50%;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px 0;
+  margin: 0;
+  width: 290px;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 6px #a1a1a1;
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px #a1a1a1;
+  top: 2px;
+}
+
+button:active {
+  top: 6px;
+  box-shadow: 0 0;
+}
+

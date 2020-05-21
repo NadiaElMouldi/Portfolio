@@ -7,6 +7,7 @@ let svg;
 
 let state = {
   data: null,
+  tags: null
 };
 
 
@@ -18,6 +19,13 @@ var main = d3.select("main");
  * */
 d3.csv("data_temp.csv", d3.autotype).then(data => {
   state.data = data;
+  state.tags = [];
+  for (var i =0; i<state.data.length; i++){
+    console.log(i)
+    var name = Object.values(state.data)[i].Name
+    state.tags.push(name)
+  }
+  console.log(state.tags)
   init()
 });
 
@@ -32,7 +40,12 @@ function init() {
     });
   };
 
- 
+  draw()
+}
+
+
+
+function draw(setGlobalState) {
 
   const cell = d3.select("#writers")
     .selectAll(".cell")
@@ -44,6 +57,9 @@ function init() {
     .style("border", "0 2px solid white")
     .style("height", "auto")
     .style("background-color", "rgba(158, 47, 40, 0)")
+    .attr("id", function(d){
+      return d.Name
+    })
     .on("mouseover", function (d) {
       d3.select(this).transition()
         .duration(200)
@@ -71,6 +87,7 @@ function init() {
       console.log("scroll")
     })
 
+    console.log(cell)
 
   const name = cell.selectAll(".name")
     .data(d => [d.Name])
@@ -84,9 +101,6 @@ function init() {
     .style("font-size", "25px")
     .style("text-align", "center")
     .style("text-transform", "capitalize")
-
-
-
 
 
   const name_arabic = cell.selectAll(".name_arabic")
@@ -113,7 +127,6 @@ function init() {
 
   var images = d3.selectAll("#Nawal")
     .on("mouseover", function (d) {
-      console.log("hey")
       d3.select(this).style("transform", "scale(1.1,1.1)")
         .style("transform-origin", "50% 50%");
 
@@ -123,16 +136,62 @@ function init() {
         .style("transform-origin", "100% 100%");
     })
 
+  
 
-    draw()
+  // console.log(document.getElementById("info").getBoundingClientRect())
+
+  const search_term = d3.select("#input_t")
+  search_term
+  .on("keypress", function() {
+    if(65<d3.event.keyCode<90){
+      ac(this.value)
+    }
+    if(d3.event.keyCode === 13){
+      console.log("pressed")
+      var val = this.value;
+      const search_found = d3.selectAll('.cell')
+      search_found.each(function(d){
+        console.log(this.id)
+        console.log(val)
+        if (this.id == val) {
+          document.getElementById(val).scrollIntoView();
+          d3.select(this)
+          .transition()
+          .duration(200)
+          .style("background-color", "#e3ced3")
+          .style("color", "#141313")
+          .style("transform", "scale(1.1,1.1)")
+          .style("transform-origin", "50% 50%");
+        }
+      })
+    }
+  })
 }
 
-function handleClick(event){
-  console.log(document.getElementById("#input_t").value)
-  return false;
+     function ac(value) { 
+        document.getElementById('datalist').innerHTML = ''; 
+           
+         var n= state.tags.length;
+         var l=value.length; 
+
+     for (var i = 0; i<n; i++) { 
+         if(((state.tags[i].toLowerCase()).indexOf(value.toLowerCase()))>-1) 
+         { 
+             var node = document.createElement("option"); 
+
+             var val = document.createTextNode(state.tags[i]); 
+              node.appendChild(val); 
+  
+              document.getElementById("datalist").appendChild(node); 
+              console.log(document.getElementById('datalist'))
+             } 
+         } 
+     } 
+   
+
+function setGlobalState(nextState) {
+  state = { ...state, ...nextState };
+  console.log("new state:", state);
+  draw();
 }
 
-
-function draw() {
-
-}
