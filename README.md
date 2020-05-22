@@ -2,7 +2,7 @@
 This repository will include documentation and and links for my Interactive Data Visualisation projects:
 
 ## [Project 1: New York City Restaurants Health Inspection Grades VS Yelp Ratings](https://nadiaelmouldi.github.io/Portfolio/Project1/)  
-This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings.  
+This project puts in contrast the New York City Resturants Helath Inspection grades with the restaurant's Yelp ratings. I was intirgued by whether New York City restaurants which did not have good health inspection grades still had good yelp ratings from people.  I combined the Health Inspection by Restaurant  dataset from the NYC Open Data website with the Yelp rating that I extracted using the Yelp API (using longitude, latitude, restaurant name, street address).
   
 ![Project Screenshot](Project1/project1.gif)
 ### Earlier Versions  
@@ -17,8 +17,8 @@ Link to initial sketches and mockup [here](https://github.com/NadiaElMouldi/Port
  
 
 ## [Project 2: Women Writers from the Middle East and North Africa: A Repository](https://nadiaelmouldi.github.io/Portfolio/Project2/)  
-This project is a repository for women writers from the Middle East and North Africa.  
-  
+This project is a repository for women writers from the Middle East and North Africa. I think this repository provides a consolidated space for women writer from MENA to be discovered and read. I compiled the data from multiple online sources like Arablit.org and Wikipedia.com. The data includes name, introduction, date of birth, some book highlights. 
+
 ![Project Screenshot](Project2/project2.gif)
 ### Earlier Versions
 <img src="Project2/v1.gif"/>
