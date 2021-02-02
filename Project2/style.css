@@ -328,7 +328,7 @@ header{
 
 .inputGroup {
   position: relative;
-  height: 70px;
+  height: 50px;
 }
 
 .inputGroup label {
@@ -374,7 +374,7 @@ header{
 }
 
 .inputGroup textarea {
-  height: 100px;
+  height: 20px;
   width: 280px;
   overflow: auto;
   resize: none;
