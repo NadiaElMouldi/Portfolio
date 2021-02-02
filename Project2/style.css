@@ -3,7 +3,6 @@ body {
   /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
   font-family: "IBM Plex Sans", sans-serif;
   overflow-x: hidden;
-  width: 100%;
   min-height: 100%;
   position: relative;
 }
@@ -16,12 +15,11 @@ br {
 
 main {
   justify-content: center;
-  font-size: 100px;
+  font-size: 50px;
   color: "#141313";
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
   /* "Garamond", sans-serif */
-  width: 100%;
   min-height: 100%;
   position: relative;
   margin:0 auto;
@@ -41,7 +39,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 800px;
+  width:  600px;
   height: 100px;
 }
   .search {
@@ -161,16 +159,17 @@ section {
   font-family: "IBM Plex Sans", sans-serif;
   margin:0 auto;
   margin-right: auto;
+  width: 80%;
   margin-left: auto;
 }
 
-section:nth-child(1) {
+/* section:nth-child(1) {
   width: 100%;
   position: absolute;
   font-family: "IBM Plex Sans", sans-serif;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 
 h6{
@@ -192,7 +191,7 @@ h1{
 }
 
 header{
-  font-size: 35px;
+  font-size: 20px;
   color: #e3ced3;
   font-family: "IBM Plex Sans", sans-serif;
   margin-right: auto;
@@ -224,14 +223,15 @@ header{
   position: sticky;
   position: -webkit-sticky;
   width: 25%;
-  top: 50px;
+  top: 5%;
+  bottom: 5%;
   margin-left: 10px;
+  font-family: "Garamond", sans-serif;
   float: left;
   border:2px solid rgb(68, 13, 13);
   color: rgb(68, 13, 13);
   font-weight: bold;
   border-radius: 15px;
-  font-family: "Garamond", sans-serif;
   -moz-border-radius: 15px;
   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTNV3x7wjlPtS5VmGUIHqZ3bXae7MemkkOq6L7PwiAwrZT49Vc&usqp=CAU"); */
 }
@@ -337,7 +337,7 @@ header{
   left: 5px;
   pointer-events: none;
   transition: all 0.3s ease;
-  font-size: 16px;
+  font-size: 10px;
   font-family: Trebuchet MS;
   color: rgb(68, 13, 13);
   font-weight: bold;
