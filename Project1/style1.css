@@ -2,14 +2,15 @@ body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
     font-family: "Source Sans Pro", sans-serif;
     padding: 1em 3em;
+    overflow: hidden;
   }
   
   #dashboard {
     display: grid;
-    grid-template-columns: 800px 150px 700px;
+    grid-template-columns: 65% 15% 20%;
     grid-gap: 5px; 
     color: #444;
-    top: 200px;
+    top: 100px;
     grid-template-areas: 
     "a b c"
   }
@@ -22,8 +23,8 @@ body {
 
 #map-overlay{
   position: absolute;
-  top:10%;
-  right: 1535px;
+  top:20%;
+  right: 80%;
   background: rgba(255, 255, 255, 0.8);
   font-family: Arial, sans-serif;
   overflow: auto;
@@ -46,15 +47,15 @@ body {
 
   #map{
     grid-area: a;
-    height: 800px;
+    height: 600%;
   }
  
 
 
   #bars{
     grid-area: c;
-    top: 500px;
-    margin-top: 40px;
+    margin-top: 5%;
+    height: 60%
   }
 
   td {
@@ -62,7 +63,7 @@ body {
     padding: 10em;
     cursor: pointer;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     text-transform: capitalize;
     border-spacing:0 50px; 
@@ -70,7 +71,7 @@ body {
   }
 
   table{
-      height: 800px;
+      height: 60%;
   }
 
   thead {

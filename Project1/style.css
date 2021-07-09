@@ -1,0 +1,107 @@
+body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 1em 3em;
+  }
+  
+  #dashboard {
+    top:200;
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+  }
+  
+
+#count {
+    height:15%;
+    position: relative;
+    top: 0;
+    width: 120%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map-overlay{
+  position: absolute;
+  top:16%;
+  right: -19%;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  width: 70%;
+  height: 20%;
+}
+
+
+  #map{
+    height:50%;
+    position: absolute;
+    width: 120%;
+    top: 300;
+    margin:auto;
+  }
+
+  #bars{
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    width: 100%;
+
+  }
+    thead,
+    tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+    color: white;
+    white-space: pre;
+  }
+
+  tbody {
+    width: 100%;
+    display: block;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  pre {
+    display: none;
+  }
+  
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.5em;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: pre;
+
+  }
+  
+  
+.label {
+  fill: white;
+  text-anchor: top;
+}
+
+.axis text{
+  font-size: 10px;
+  stroke: white;
+}
+
+.axis path{
+  stroke:white;
+}
+
+.axis line{
+  stroke: white;
+}

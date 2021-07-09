@@ -2,7 +2,7 @@ class bars {
 
     constructor(state, setGlobalState,grade, fill_color) {
 
-      this.width = window.innerWidth * 0.6;
+      this.width = window.innerWidth * 0.4;
       this.height = window.innerHeight * 0.22;
       this.margins = { top: 20, bottom: 20, left: 20, right: 20 };
       this.duration = 1000;
@@ -84,7 +84,7 @@ class bars {
       .attr("x", d => xScale(d.n)+2*this.margins.left)
       .attr("y", d => yScale(d.rating_cat)-this.margins.left/2)
       .text(d => d.rating_cat)
-      .style("font-size","25px")
+      .style("font-size","15px")
       .style("font-weight","bolder")
       .attr("dy", "1.25em");
       

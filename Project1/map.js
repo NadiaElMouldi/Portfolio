@@ -2,18 +2,11 @@ class Map {
 
     constructor(state, setGlobalState) {
       // initialize properties here
-      this.width = 800;
-      this.height = 850;
-      this.margins = { top: 20, bottom: 20, left: 20, right: 20 };
-      this.duration = 1000;
-      this.format = d3.format(",." + d3.precisionFixed(1) + "f");
-  
       mapboxgl.accessToken = 'pk.eyJ1IjoibmFkeTE5NiIsImEiOiJjazg1enF4dTAwMWowM2dwZGRtM3d6bTR5In0.Isdajp-jzePFbwz97Uqbyg';
       this.map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/nady196/ck87yam1c14z71inizvux7fjj',
-          zoom: 12.45,
-          center:[-73.974, 40.728]
+
       });
 
       
